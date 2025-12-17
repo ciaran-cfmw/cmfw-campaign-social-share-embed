@@ -19,7 +19,7 @@ export const generateCaption = async (baseCaption: string): Promise<string> => {
       Return ONLY the new caption text.`,
     });
 
-    return response.text.trim();
+    return response.text?.trim() || baseCaption;
   } catch (error) {
     console.error("Error generating caption:", error);
     return baseCaption;
