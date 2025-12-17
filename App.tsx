@@ -1,4 +1,4 @@
-import React from 'react';
+// React import removed as it is unused
 import { SHARE_OPTIONS } from './constants';
 import { PosterVisual } from './components/PosterVisual';
 import { ShareButtons } from './components/ShareButtons';
